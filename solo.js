@@ -1,5 +1,5 @@
 {
   "run_list" : [
-    "recipe[frontend]"
+    "recipe[fundingcircle::webserver]"
     ]
 }
