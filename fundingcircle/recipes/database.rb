@@ -6,6 +6,7 @@ end
 # Configure the MySQL service.
 mysql_service 'default' do
   initial_root_password node['fundingcircle']['database']['root_password']
+  bind_address '0.0.0.0'
   action [:create, :start]
 end
 
